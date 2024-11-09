@@ -18,9 +18,9 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="/img/SOME.png" alt="Website Logo" class="img-fluid" width="70" height="auto">
                 </a>
-
+    
                 <!-- Navbar Links -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" id="navbar-toggler" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,8 +29,8 @@
                             <a class="nav-link" href="#">Log out</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/account/profile.html">
-                                <img src="/img/pexels-pixabay-57416.jpg" alt="Profile Photo" class="d-inline-block align-top rounded-circle" width="50" height="50">
+                            <a class="nav-link" href="/feed/index.html">
+                                <img src="../img/pexels-pixabay-57416.jpg" alt="Profile Photo" class="d-inline-block align-top rounded-circle" width="50" height="50">
                             </a>
                         </li>
                     </ul>
@@ -38,6 +38,7 @@
             </div>
         </nav>
     </header>
+    
 
     <main>
         <div class="container">
@@ -158,8 +159,18 @@
     </footer>
 
     <script>
+
+        //Nav 
+        const navbarToggler = document.getElementById('navbar-toggler'); // Navbar toggle button
+        const navbarNav = document.getElementById('navbarNav'); // Navbar menu container
+
+        // Toggle the navbar on and off
+        navbarToggler.addEventListener('click', function() {
+        // Toggle the "collapse" class on the menu to show/hide it
+        navbarNav.classList.toggle('collapse');
+        });
+        
         // JavaScript to control the modal open/close
-        console.log("hello");
         const newPostBtn = document.getElementById('newPostBtn'); 
         const newPostModal = document.getElementById('newPostModal'); // Modal container
         const closeModal = document.getElementById('closeModal'); 
