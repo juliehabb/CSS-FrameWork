@@ -7,8 +7,11 @@
         <meta name="feed" content="This is your feed">
         <title>Feed</title>
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="../css/index.css" />
+         <!--CSS -->
+        <link rel="stylesheet" href="../dist/css/main.css">
         <script src="https://kit.fontawesome.com/ab8b6737a1.js" crossorigin="anonymous"></script>
+        <!--Javascript-->
+        <script type="module" src="../js/nav.js" ></script>
     </head>
 
     <body>
@@ -27,7 +30,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Log out</a>
+                                <a class="nav-link" href="../index.html">Log out</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/profile/index.html">
@@ -60,7 +63,7 @@
                     </div>
     
                     <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
-                        <a href="#" class="btn btn-primary">+ New Post</a>
+                        <a href="#" class="btn btn-primary ">+ New Post</a>
                     </div>
                 </div>
     
@@ -100,17 +103,6 @@
         </main>
     
         <footer></footer>
-        <script>
-        //Nav 
-          const navbarToggler = document.getElementById('navbar-toggler'); // Navbar toggle button
-          const navbarNav = document.getElementById('navbarNav'); // Navbar menu container
-
-          // Toggle the navbar on and off
-          navbarToggler.addEventListener('click', function() {
-          // Toggle the "collapse" class on the menu to show/hide it
-          navbarNav.classList.toggle('collapse');
-          });
-          </script>
     </body>
     
 </html>
