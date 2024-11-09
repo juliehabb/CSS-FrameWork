@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.3"
   },
   "devDependencies": {
+    "sass": "^1.80.6",
     "watch": "^0.13.0"
   }
 }
