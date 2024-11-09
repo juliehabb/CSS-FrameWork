@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(255, 191, 135);
+}
+
+.info-section {
+  background-color: rgb(252, 252, 252);
+}
+
+.btn {
+  background-color: #2e96a2;
+  border: 2px solid #2e96a2;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #a87112;
+  border: 2px solid #a87112;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: rgb(252, 252, 252);
+}
+
+.link {
+  color: #2e96a2;
+}
+
+.link:hover {
+  color: #a87112;
+}
+
+/*# sourceMappingURL=main.css.map */
