@@ -1,0 +1,15 @@
+// _variables.scss
+$primary-color: #2e96a2;
+$secondary-color: #a87112;
+
+  .btn-primary {
+    background-color: $primary-color;
+    border: 2px solid $primary-color;
+  }
+
+  .btn-primary:hover {
+    background-color: $secondary-color;
+    border: 2px solid $secondary-color;
+  }
+
+
