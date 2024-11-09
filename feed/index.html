@@ -7,100 +7,88 @@
         <meta name="feed" content="This is your feed">
         <title>Feed</title>
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="../css/index.css" />
         <script src="https://kit.fontawesome.com/ab8b6737a1.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header >
-            <nav class="container-fluid d-flex justify-content-between p-3 align-items-center">
-                <div class="">
-                    <a href="index.html">
-                        <img src="/img/SOME.png" alt="Website Logo" 
-                        class="img-fluid" width="70" height="auto">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="/img/SOME.png" alt="Website Logo" class="img-fluid" width="70">
                     </a>
-                </div>
-                <div class="d-flex">
-                    <ul class="list-unstyled p-3 ">
-                        <li>Log out</li>
-                    </ul>
-                    <a href="/account/profile.html">
-                        <img src="../img/pexels-pixabay-57416.jpg" alt="Profile Photo" class=" d-line-block align-top rounded-circle " width="50" height="50">
-                    </a>
-
+                    <div class="d-flex align-items-center">
+                        <ul class="list-unstyled mb-0 me-3">
+                            <li><a href="#" class="text-decoration-none">Log out</a></li>
+                        </ul>
+                        <a href="/profile/index.html">
+                            <img src="../img/pexels-pixabay-57416.jpg" alt="Profile Photo" class="rounded-circle" width="50" height="50">
+                        </a>
+                    </div>
                 </div>
             </nav>
         </header>
+    
         <main>
             <div class="container-sm">
-                <div class="row">
-                    <div class="d-flex justify-content-between " >
-                        <div class="container-filter-search d-flex pb-3 ">
-                            <div class="dropdown pr-5">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
-                                <ul class="dropdown-menu" aria-labelledby="filterDropdown">
-                                    <li><a class="dropdown-item" href="#"></a>All</li>
-                                    <li><a class="dropdown-item" href="#"></a>New</li>
-                                    <li><a class="dropdown-item" href="#"></a></li>
-
-                                </ul>
-                            </div>
-                            <div class="search-container d-flex ml-5">
-                                <input type="search" class="form-control me 2 search-field" placeholder="Search...">
-                                <i class=""></i>
-                                <button class="btn btn-outline-info" type="send">Search</button>
-                            </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6 d-flex pb-3">
+                        <div class="dropdown pe-3">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+                            <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+                                <li><a class="dropdown-item" href="#">All</a></li>
+                                <li><a class="dropdown-item" href="#">New</a></li>
+                                <li><a class="dropdown-item" href="#">Trending</a></li>
+                            </ul>
                         </div>
-                        <div class="npost-button-container">
-                            <a class="" href="">
-                                <p> + New post</p>
-                            </a>
+                        <div class="search-container d-flex">
+                            <input type="search" class="form-control me-2" placeholder="Search...">
+                            <button class="btn btn-outline-info" type="button">Search</button>
                         </div>
                     </div>
-                    <div class="section-full-blogposts">
-                        <article class="bg p-5 d-flex flex-column">
-                            <div class="d-flex flex-row align-items-center mb-3">
-                                <div class="">
-                                    <img src="../img/pexels-pixabay-57416.jpg" alt="Profile Picture" class="rounded-circle " height="60" width="60" >
-                                </div>
-                                <div class="px-3 ">
-                                    <h4>John Doe</h4>
-                                    <h6>16 okt at 16:22</h6>
-                                </div>
-                            </div>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dolor, eius, ut quos sint corporis in dignissimos iure facere voluptate ea ex iste, delectus saepe velit temporibus quisquam ab hic.</p>
-                            </div>
-                            <div class="post-full-img-container d-flex justify-content-between">
-                                <div class="post-full-img col-md-6 ">
-                                    <div class="">
-                                        <img class="card-img-top" src="../img/pexels-catscoming-920220.jpg" alt="Placeholder">
-                                    </div>
-                                </div>
-                                <div class="post-full-img col-md-6">
-                                    <div class="">
-                                        <img class="card-img-top"  src="../img/pexels-eftodii-aurelia-90976-735423.jpg" alt="Placeholder">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="post-likes-comments-container d-flex pt-2  ">
-                                <div class=" d-flex flex-row">
-                                    <i class="fa-regular fa-heart "></i>
-                                    <p class="px-1" >20 likes</p>
-                                </div>
-                                <div class=" d-flex flex-row">
-                                    <i class="fa-regular fa-comment"></i>
-                                    <p>2 comments</p>
-                                </div>
-                            </div>
-                        </article>
+    
+                    <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
+                        <a href="#" class="btn btn-primary">+ New Post</a>
                     </div>
                 </div>
+    
+                <div class="section-full-blogposts mt-4">
+                    <article class="bg-white p-4 rounded shadow-sm mb-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <img src="../img/pexels-pixabay-57416.jpg" alt="Profile Picture" class="rounded-circle" height="60" width="60">
+                            </div>
+                            <div>
+                                <h5 class="mb-1">John Doe</h5>
+                                <p class="text-muted mb-0">16 Oct at 16:22</p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dolor, eius, ut quos sint corporis in dignissimos iure facere voluptate ea ex iste, delectus saepe velit temporibus quisquam ab hic.</p>
+                        <div class="post-full-img-container d-flex justify-content-between mt-3">
+                            <div class="post-full-img col-md-6 mb-3">
+                                <img class="card-img-top" src="../img/pexels-catscoming-920220.jpg" alt="Image 1">
+                            </div>
+                            <div class="post-full-img col-md-6">
+                                <img class="card-img-top" src="../img/pexels-eftodii-aurelia-90976-735423.jpg" alt="Image 2">
+                            </div>
+                        </div>
+                        <div class="post-likes-comments-container d-flex justify-content-between mt-2">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-heart me-1"></i>
+                                <p class="mb-0">20 likes</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-comment me-1"></i>
+                                <p class="mb-0">2 comments</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
-
         </main>
-        <footer>
-
-        </footer>
+    
+        <footer></footer>
     </body>
+    
 </html>
