@@ -7,8 +7,11 @@
     <title>Profile Page</title>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!--compiled SASS CSS file -->
-    <link rel="stylesheet" href="path/to/index.css">
+    <!--CSS -->
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <!--Javascript-->
+    <script type="module" src="../js/nav.js" ></script>
+
 </head>
 <body>
     <header>
@@ -26,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log out</a>
+                            <a class="nav-link" href="../index.html">Log out</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/feed/index.html">
@@ -160,15 +163,6 @@
 
     <script>
 
-        //Nav 
-        const navbarToggler = document.getElementById('navbar-toggler'); // Navbar toggle button
-        const navbarNav = document.getElementById('navbarNav'); // Navbar menu container
-
-        // Toggle the navbar on and off
-        navbarToggler.addEventListener('click', function() {
-        // Toggle the "collapse" class on the menu to show/hide it
-        navbarNav.classList.toggle('collapse');
-        });
         
         // JavaScript to control the modal open/close
         const newPostBtn = document.getElementById('newPostBtn'); 
